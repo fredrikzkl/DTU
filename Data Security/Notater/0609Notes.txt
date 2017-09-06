@@ -1,0 +1,164 @@
+Course Objectives:
+
+- Strongest as the weakest in the chain
+- Overview over most topics, not into details
+- Textbook? Yes
+- Tutorials and labs, lectures, project as final report (no exam)
+
+
+TEXTBOOK: Security in Computing, fifth edition. En bombe på forsiden med en safe
+
+Specialist program in Cybersecurity
+
+Prevent -> Detect -> React -> Recover
+
+Primary goals:
+- Confidentiality
+- Integrity
+- Availability
+Other goals:
+- Accountability
+  - Actions can be traced back to a single entity
+    People can be made responsible
+  - Principle known as non-repudiation in cryptography
+- Privacy (privacy families defined by common criteria)
+  - Pseudonymity, unlinkability, anonomity, unobservability
+  - There is an inherent conflict between accountability and privacy
+- Authenticity
+  Request or information are authentic and autheticated
+  Resourses (both hardware and software)
+
+
+--Confidentiality--
+
+  - Unauthorised observation of information / resources
+  - Secrets remain secrets
+  - Military information (important stuff)
+  Confidentiality can be ensured with cryptography (encrypt data, cryptographic key)
+  Access control mechanism protect data from unauthorised access
+
+
+--Integrity--
+
+Preventing unauthorised modification of information or resources
+  - Origin pertains to the source
+The classes of integirty:
+  - Prevention mechanism (prevents data being modified in unauthorised ways)
+  - Detection mechanism (detected and corrected)
+
+--Availability--
+
+- Systems information and resources are available to authorised users when they need them
+- Attacks against availability is known as Denail-of-Service (DoS)
+    - Many reports of DoS attacks in the media
+- Hardest research
+
+-- Risks --
+
+- Security is concerned with management of risk (elimination or reducing harm to assets)
+- Material harm (theft n stuff)
+- Immaterial harm (copyright, intellectual property, reputation)
+- Risk management (risk identification, treatment, analysis, monitoring / review)
+
+-- Threats --
+
+4 step process
+- Threat-> vulneravility -> oppertunity -> attack
+- Four major classes of threats
+  Disclosure (unauthorised access to information)
+  Deception (acceptance of false data)
+  Disruption(interruption or prevention of correct operation)
+  Unsurpation (unauthorised control of the system)
+- Five ways to deal with exploits
+  Prevention(remove all vulnerabilites)
+  Deterrence(making exploits difficult, but not impoosible)
+  Deflection(make other targets relatively more attractive)
+  Detection(as they happen or after the fact, forensics)
+  Recovery (restore the system to a usable state)
+
+  -- Vulnerabilites --
+
+  Weaknesses in the sucurity architechture
+    - Weakness assumtions (security requirements to specified or poorly understood)
+    - Weak architechture (security requirements not properly identified, not cover all requirements, not up to date)
+    - Weak components (poor specification of components of the security architecthture, implemetation, components do not compose securely)
+  Weak operation
+    - Poor recruitment processes
+    - Poor security awareness
+
+
+--Possible Attackers--
+
+Over 50% are insiders, employees n stuff (daily access to the network)
+Crackers (hackers), often programmers, script-kiddies(cracker wannabes), tools provided by others (have to access internal network, gotta crack that firewall)
+Spies (industrial and military) (3 bs, beatings, bribery and blackmail)
+Criminals (theives, organized crime) (ability to infiltrate, 3b's)
+Terrorists and Hactivitsts
+- Consider: means (method,), motives and opportunity
+
+
+--Motiviation for Attackers--
+
+Curiosuty about how the system works
+  The challenge of hacking hte system
+  Ethical hacking (expose vulnerabilites and warn others)
+Fame (recognition for their achivments)
+Finincial gains (fraud, theift, industrial espionage)
+Ideology (hactivism, disrupt but do not cause serious damage, cyberterorism)
+
+--Policy--
+
+It is important to distinguish between the policy and the mechanism that enforces the policy
+  Policy: statement of what it is, and what is not allowed
+  Mechanism: method, tool or process for enforcing a security policy
+Security Policies
+- Defined in different ways
+  Different level of detail from very general to very specific
+  Different level of accuracy
+When multiple organizations collaborate the composed entity often has a security policy based on the individual security policies
+
+
+-- Goals of security mechanisms--
+- Prevent attacks, detect attacks, recover from attacks
+Prevention: cryptograpy and access control are often used
+Detection: Intrusion detection systems are often used to detect attacks during or after the attack
+Recovery: React to the attack, stop the attack in progress or allow it to continue
+          Repair the damage
+
+--Assumptions and trust--
+- Security policies are always based on some assumptions about the behaviour of compntents and entities in the system
+Two assupmtions:
+- Secure and nonsecure states of the system
+- guarantee that a system in the secure states will never become nonsecure
+- If either fails - > system is insecure
+
+
+--Assurance--
+
+Attempts to quantify some of the assumtipons about trust in the security
+Requires a specification of the behaviour of the system
+  - Satisfy a specifaction if the specification correctly states how the system will function
+Assurance considers all aspects of SD (software development)
+  - Specifications must be correct and unambiguous
+  - Design of the system translates the specification into compontents that will implement them
+Stronger assurance requires formal proofs of correctness
+
+--Operational issus--
+Defender. cost of an effective attack must be higher than the design, implementation etc
+Attacker: cost of an effective attack must be lower than the benefits gained through the attack
+
+Risk analyses deterimnes what attacks are plausible and termines the cost of theese attacks(creditcard accepts small amounts of fraud)
+Cost benefit analysis establish whether the benefits of a particular countermeasure exceeds the cost implementing and operating it
+Laws and customs in local enviourment plays an important role
+  - Different laws on data protection are defined in different juristdictions
+  - Policies and mechanisms that are legal but unacceptable, in the local environment should have avoided
+
+
+..Organisational Issues--
+Implementing security in a large organsistion is difficult and tech is often the easy bit
+ - Benefits of security are not directly visible on the bottom line
+- Some security mechanisms may actually be costly (and slow down communication)
+Responsability for computer security is not always obvious
+ - IT: servers, hardware and software
+Social Engineering (phishing) is surprisingly effective
+Security incidents are not always attacks!
